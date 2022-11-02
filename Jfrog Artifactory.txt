@@ -1,0 +1,27 @@
+Artifacts : The files that contains both the compiled code and the resources that are used to compile them are known as Artifacts. Tey are readily deployable files.
+In java, an artifact would be a .jar(files are for java application) , .war(files are for web Application) , .ear( files are for enterprise application) etc.
+
+Artifactory Repository : An artifact repository which can store multiple different versions of artifacts.Each time the war file is created it is stored in a server dedicated 
+for the artifacts.
+( In Software development,developer writes the source code -> then we compile it -> test it -> review it -> if it is successful -> then code sends to the deployment
+there are a lots of different builds made everyday even by a single team and each time we need to change the code compile it  and deploy it on the server. but there 
+might be a scenario in which QA or testing team come up with an error in the code which needs to be rollback so for te rollback we would have to go back to our git 
+and look for the previous version
+and deployed that again instead of that we can store our artifacts in our repository)
+
+JFrog Artifactory - It is a tool used by DevOps methodology for multiple purposes.  One of its main purpose to store he artifacts that have been created in the code pipeline
+Another one of it's purpose is to act as a sort of buffer for downloading dependencies for the build tool and languages.
+
+* Version Control will give the Source code -> build tool will build it -> producea resulting artifacts -> stored in Jfrog artifactory -> it artifacts fulfil the abilities or quantities required 
+-> development  (all is done by contious integration CI toollike Jenkins)
+* Usually Build Tool downloads the required dependency for the source code but in this case Jfrog acts as a buffer or proxy for downloading and managing these dependencies
+build Tool asking
+
+RESPONSIBILITIES :- 
+ Helps in storing all the artifacts
+ Helps in downloading and managing dependencies
+ Has ability to store different artifacts for diff projects for diff teams in diff env.
+ 
+
+
+
